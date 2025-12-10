@@ -1,0 +1,19 @@
+*{
+  margin:0px;
+  padding:0px;
+}
+
+nav{
+  padding: 5px;
+}
+
+nav a{
+    text-decoration:none;
+    margin-left:55px;
+    padding:0px;
+
+}
+
+header{
+  background-color:palegreen;
+}

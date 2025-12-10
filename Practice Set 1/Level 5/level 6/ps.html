@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+*{
+    margin:0;
+    padding:0;
+
+}
+img{
+    height: 100px;
+}    
+
+#image_container{
+    border: 2px solid black;
+    height: 150px;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+}
+
+
+nav a{
+    text-decoration: none;;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    height: 30px;
+    padding-top: 5px;
+}
+
+header{
+    background-color: moccasin;;
+}
+
+#box_container{
+    border: 2px solid black;
+    display:flex;
+    justify-content:space-around;
+    height:105px;
+    width:350px;
+}
+
+#box2{
+    flex-grow: 1;
+    flex-shrink:1;
+
+}
+
+
+.box {
+    height:100px;
+    width:75px;
+    border: 2px solid red;
+    flex-shrink:0;
+   
+}
+
+#media_box{
+    height: 50px;
+    width: 50px;
+    background-color: darkseagreen;
+    border:2px solid black;
+}
+
+
+@media screen and(min-width:300px) and (max-width:400px) {
+    #media_box{
+        background-color: red;
+    }
+    }
+
+@media screen and (min-width:400px ) {
+    #media_box{
+        background-color: blue;
+    }
+    
+}    
+    
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+        <a href="#">Home</a>
+        <a href="#">Products</a>
+        <a href="#">contact us</a>
+        <a href="#">Support us </a>
+        </nav>
+    </header>
+    <main>
+        <div id ="image_container">
+            <img src="/bharat.jpeg" alt="Map of the Bharat">
+        </div>
+
+        <div id ="box_container">
+            <div id="box1" class="box">Box1</div>
+            <div id="box2" class ="box">Box2</div>
+            <div id="box3" class="box">Box3</div>
+        </div>
+
+        <br><br><br>
+        <div id ="media_box">Media Box</div>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>
